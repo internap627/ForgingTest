@@ -124,12 +124,7 @@
 	font-size: 18px;
 	border-radius: 0;
 	border: none;
-	border-bottom: 1px solid rgba(0,0,0, 0.12);
-}
-
-.select-text:focus {
-	outline: none;
-	border-bottom: 1px solid rgba(0,0,0, 0);
+	border: 2px solid rgba(0,0,0, 0.12);
 }
 
 .translation {
