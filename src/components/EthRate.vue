@@ -77,32 +77,6 @@
 .RateGroup > * {
   margin-bottom: 10px;
 }
-.userwrapper {
-  max-width: 400px;
-  margin: 10px auto;
-}
-#username {
-  background-color: #f1f1f1;
-  border: 1px solid #f1f1f1;
-  border-radius: 2px;
-  box-sizing: border-box;
-  font-size: 14px;
-  padding: 13px;
-  width: 100%;
-}
-button {
-  background-color: #f1f1f1;
-  padding: 0.5rem 1.25rem;
-  font-weight: 500;
-  border: 2px solid transparent;
-  border-radius: 2.125rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  outline: none;
-  cursor: pointer;
-}
 
 .Card {
   width: 250px;
