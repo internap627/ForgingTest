@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <LoginForm />
+    <EthRate />
   </div>
 </template>
 
 <script>
-import LoginForm from './components/LoginForm.vue'
+import EthRate from './components/EthRate.vue'
 
 export default {
   name: 'app',
   components: {
-    LoginForm
+    EthRate
   }
 }
 </script>
