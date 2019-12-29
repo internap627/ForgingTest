@@ -43,6 +43,8 @@ async function routes(fastify, options) {
     rp(options)
       .then(function(repos) {
         if (fileFinder(repos.data.id)) {
+          const encoded = base64(`${repos.data.id}.jpg`);
+          res.send(encoded);
           return;
         } else {
           var download = function(uri, filename, callback) {
