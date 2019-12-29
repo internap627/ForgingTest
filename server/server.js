@@ -2,7 +2,7 @@
 const fastify = require('fastify')()
 
 //Routes
-fastify.register(require('./routes/user'), { prefix: 'api/user'})
+fastify.register(require('./routes/invoice'), { prefix: 'status/invoice'})
 fastify.register(require('./routes/avatar'), { prefix: 'api/user'})
 
 
