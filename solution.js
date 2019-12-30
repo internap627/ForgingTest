@@ -84,46 +84,34 @@ const data = {
 };
 
 const makeObj = (obj, i) => {
+  const logic = el => {
+    if (el.includes("HnK")) {
+      return { store: el };
+    } else if (el.includes("tpub")) {
+      return { xpub: el };
+    } else if (el.includes("xxx")) {
+      return { viewkey: el };
+    } else if (el.length <= 4) {
+      return { name: el };
+    } else return { address: el };
+  };
+
   if (obj[i].length <= 1) {
     let arr = obj[i][0].map(el => {
-      if (el.includes("HnK")) {
-        return { store: el };
-      } else if (el.includes("tpub")) {
-        return { xpub: el };
-      } else if (el.includes("xxx")) {
-        return { viewkey: el };
-      } else if (el.length <= 4) {
-        return { name: el };
-      } else return { address: el };
+      return logic(el);
     });
 
     return arr;
   } else if (i === "btc" || i === "ltc") {
     let arr = obj[i].map(el => {
-      if (el.includes("HnK")) {
-        return { store: el };
-      } else if (el.includes("tpub")) {
-        return { xpub: el };
-      } else if (el.includes("xxx")) {
-        return { viewkey: el };
-      } else if (el.length <= 4) {
-        return { name: el };
-      } else return { address: el };
+      return logic(el);
     });
 
     return arr;
   } else {
     let arr = obj[i].map(el => {
       return el.map(el => {
-        if (el.includes("HnK")) {
-          return { store: el };
-        } else if (el.includes("tpub")) {
-          return { xpub: el };
-        } else if (el.includes("xxx")) {
-          return { viewkey: el };
-        } else if (el.length <= 4) {
-          return { name: el };
-        } else return { address: el };
+        return logic(el);
       });
     });
     return arr;
