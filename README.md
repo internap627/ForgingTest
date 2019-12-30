@@ -2,12 +2,8 @@
 
 ## Project setup
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+For Vue branches (login-form & dynamic-rate-eth) - npm install && npm run serve
+For Fastify branches (status & sample-api) - cd server/ && npm install then run node server.js
 ```
 
 ### Compiles and minifies for production
